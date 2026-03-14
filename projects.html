@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Tushar Malpani</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="images.html">Images</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="toggleTheme">Toggle Light/Dark</button>
+    </header>
+
+    <main>
+        <h1>Projects</h1>
+        <ul>
+            <li>Movie Downloader – <a href="https://ram678.github.io/Movie/" target="_blank">Link</a></li>
+            <li>Song Downloader – <a href="https://drive.google.com/drive/folders/1Ui09Mw_LCDxnFJd_BedtU1q5PeJlUxyX" target="_blank">Link</a></li>
+            <li>Student Form Submission – <a href="https://ram678.github.io/Abc/" target="_blank">Link</a></li>
+            <li>Work Form Submission – <a href="https://ram678.github.io/A" target="_blank">Link</a></li>
+            <li>File Sharing Website – <a href="https://ram678.github.io/fileshare/" target="_blank">Link</a></li>
+            <li>Many more…</li>
+        </ul>
+    </main>
+
+    <script>
+        const toggle = document.getElementById('toggleTheme');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
