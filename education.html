@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | Tushar Malpani</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="images.html">Images</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="toggleTheme">Toggle Light/Dark</button>
+    </header>
+
+    <main>
+        <h1>Education Timeline</h1>
+        <ol>
+            <li><strong>Brookfield School</strong> – North Lakhimpur (2015–2021)</li>
+            <li><strong>LK Singhania Education Centre</strong> – Gotan (2022–2023)</li>
+            <li><strong>GD Goenka International School</strong> – Surat (2024–2026)</li>
+        </ol>
+    </main>
+
+    <script>
+        const toggle = document.getElementById('toggleTheme');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
