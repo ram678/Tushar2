@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tushar Malpani | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="images.html">Images</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="toggleTheme">Toggle Light/Dark</button>
+    </header>
+
+    <main>
+        <h1>Welcome to Tushar Malpani's Website</h1>
+        <p>This is the official personal website showcasing education, projects, skills, and contact information.</p>
+    </main>
+
+    <script>
+        const toggle = document.getElementById('toggleTheme');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
