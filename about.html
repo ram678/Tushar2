@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Tushar Malpani</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="images.html">Images</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="toggleTheme">Toggle Light/Dark</button>
+    </header>
+
+    <main>
+        <h1>About Tushar Malpani</h1>
+        <section>
+            <h2>Biography</h2>
+            <p>Tushar Malpani is a student passionate about technology, automation, and web development. Currently in Grade 8, he has explored multiple projects including form submissions, movie downloaders, and mail apps without login.</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>Brookfield School, North Lakhimpur (2015–2021)</li>
+                <li>LK Singhania Education Centre, Gotan (2022–2023)</li>
+                <li>GD Goenka International School, Surat (2024–2026)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Study: 90%</li>
+                <li>Website Experiments: 80%</li>
+                <li>Technology Learning: 60%</li>
+                <li>Automation Tools: 70%</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        const toggle = document.getElementById('toggleTheme');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
