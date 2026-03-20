@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tushar Malpani - Encyclopedia</title>
+<style>
+:root {
+  --bg: #f6f6f6;
+  --text: #000;
+  --box: #ffffff;
+}body { font-family: Georgia, "Times New Roman", serif; background-color: var(--bg); color: var(--text); margin: 0; }
+
+.dark { --bg: #1e1e1e; --text: #ffffff; --box: #2c2c2c; }
+
+.topbar { background: var(--box); border-bottom: 1px solid #a2a9b1; padding: 10px 20px; display: flex; justify-content: space-between; }
+
+.search-box { padding: 5px; }
+
+.main { display: flex; }
+
+.sidebar { width: 220px; background: #f8f9fa; border-right: 1px solid #a2a9b1; padding: 15px; height: 100vh; }
+
+.sidebar a { display: block; color: #0645ad; text-decoration: none; margin: 6px 0; }
+
+.content { flex: 1; padding: 25px; background: var(--box); }
+
+h1, h2 { border-bottom: 1px solid #a2a9b1; }
+
+.infobox { float: right; width: 260px; border: 1px solid #a2a9b1; background: #f8f9fa; padding: 10px; margin: 10px; }
+
+.gallery img { width: 150px; margin: 5px; }
+
+button { cursor: pointer; }
+
+@media(max-width: 768px) { .main { flex-direction: column; } .sidebar { width: 100%; height: auto; } } </style>
+
+</head>
+<body><div class="topbar">
+  <div>Wikipedia-style Encyclopedia</div>
+  <div>
+    <input class="search-box" placeholder="Search..." onkeyup="searchText(this.value)">
+    <button onclick="toggleDark()">🌙</button>
+  </div>
+</div><div class="main"><div class="sidebar">
+<b>Navigation</b>
+<a href="#">Main page</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div><div class="content" id="content"><h1>Tushar Malpani</h1><div class="infobox">
+<img src="https://via.placeholder.com/250">
+<b>Tushar Malpani</b><br>
+Student & Developer
+</div><p><b>Tushar Malpani</b> is a student interested in web development and innovation.</p><h2>Early life</h2>
+<p>He developed interest in technology and websites at a young age.</p><h2>Education</h2>
+<p>Currently pursuing school education with participation in Olympiads.</p><h2 id="projects">Projects</h2>
+<p>Includes movie website, personal pages, and UI experiments.</p><div class="gallery">
+<img src="https://via.placeholder.com/150">
+<img src="https://via.placeholder.com/150">
+<img src="https://via.placeholder.com/150">
+</div><h2>Interests</h2>
+<p>Coding, web design, innovation.</p><h2 id="contact">Contact</h2>
+<p>Email: example@email.com</p><div class="footer">
+Personal encyclopedia project. Not affiliated with Wikipedia.
+</div></div>
+</div><script>
+function toggleDark() {
+  document.body.classList.toggle('dark');
+}
+
+function searchText(query) {
+  let content = document.getElementById('content');
+  let text = content.innerText.toLowerCase();
+  if (!text.includes(query.toLowerCase())) {
+    content.style.opacity = "0.3";
+  } else {
+    content.style.opacity = "1";
+  }
+}
+</script></body>
+</html>
